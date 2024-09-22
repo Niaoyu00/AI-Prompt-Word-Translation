@@ -1,0 +1,18 @@
+{
+  "name": "Baidu翻译",
+  "productName": "Baidu翻译",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "Administrator",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "md5": "2.3.0"
+  },
+  "devDependencies": {
+    "electron": "31.2.1"
+  }
+}

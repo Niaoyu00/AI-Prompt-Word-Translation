@@ -1,0 +1,76 @@
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0 30px 30px 30px;
+    }
+    span.top {
+        right: 84px;
+        position: fixed;
+        /* cursor: pointer; */
+        width: 69px;
+        height: 30px;
+        /* background-color: green; */
+        /* text-align: center; */
+        line-height: 30px;
+    }
+    .drag-handle {
+        -webkit-app-region: drag;
+        height: 30px; /* 根据需要调整大小 */
+        width: 100%; /* 可以是全宽或只占一部分 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10; /* 确保它在其他内容之上 */
+        cursor: move; /* 提示用户可以拖动 */
+    }
+
+    /* 在CSS中添加复制通知的样式 */
+    .copy-notification {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: #f8f8f8;
+        color: #333;
+        padding: 5px 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        font-size: 14px;
+        display: none; /* 默认不显示 */
+    }
+
+    h3 {
+        text-align: center;
+        cursor: default;
+        user-select: none;
+    }
+    .input-output-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+        z-index: 9;
+    }
+    .input-field {
+        width: 45%; /* 根据需要调整宽度 */
+        margin-right: 10px; /* 添加一些间隔 */
+        min-height: 100px; /* 设置最小高度 */
+        padding: 10px; /* 添加内边距 */
+        border: 1px solid #ccc; /* 添加边框以区分区域 */
+        text-align: left; /* 默认情况下，输出窗口也设置为顶格居左对齐 */
+        overflow-y: auto; /* 如果内容超出，允许垂直滚动 */
+        outline: none; /* 移除焦点时的轮廓线 */
+    }
+    .output-window {
+        position: relative;
+        width: 45%; /* 根据需要调整宽度 */
+        margin-left: 10px; /* 添加一些间隔 */
+        border: 1px solid #ccc; /* 添加边框以区分区域 */
+        min-height: 100px; /* 设置最小高度 */
+        padding: 10px; /* 添加内边距 */
+        text-align: left; /* 默认情况下，输出窗口也设置为顶格居左对齐 */
+    }
+
